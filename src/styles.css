@@ -1,4 +1,103 @@
-.App {
-	font-family: sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+	font-family: "Raleway", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#root {
+	min-height: 98vh;
+	margin: 0.5rem;
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-direction: column;
 	text-align: center;
+}
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	background: #9998fb;
+	margin: 0 0 0.5rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+.main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #f0f0f0;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+.footer {
+	margin: 0.5rem 0 0;
+	padding: 1rem;
+	background: #f24b66;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+.brand {
+	text-decoration: none;
+	color: #fff;
+	font-size: larger;
+	margin-left: 1rem;
+}
+.nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.nav .nav-link {
+	text-decoration: none;
+	margin-right: 1rem;
+	width: max-content;
+	color: #fff;
+	opacity: 0.65;
+	border-bottom: 1px solid transparent;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+.nav-link:hover {
+	opacity: 1;
+}
+.nav-link.active {
+	border-color: #fff;
+	opacity: 1;
+}
+.link {
+	text-decoration: none;
+	display: inline-block;
+	padding: auto 2rem;
+	color: inherit;
+	opacity: 0.75;
+	border-bottom: 1px solid transparent;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+.link:hover {
+	opacity: 1;
 }
